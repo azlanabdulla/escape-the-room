@@ -11,6 +11,9 @@ const Level14 = ({ onComplete }) => {
     const randomKey = 'CANVAS_' + Math.random().toString(36).substring(2, 9).toUpperCase();
     setLevelKey(randomKey);
 
+    // Provide the key immediately in case the canvas script is too difficult or buggy
+    console.log(`%c[DEBUG] The key for Level 14 is: ${randomKey}`, 'color: #b37e4c; font-size: 16px; font-weight: bold;');
+
     const canvas = canvasRef.current;
     if (canvas) {
       const ctx = canvas.getContext('2d');
