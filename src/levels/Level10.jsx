@@ -34,7 +34,7 @@ export default function Level10({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 10: Caesar Cipher</h2>
-        <span className="level-badge">10 / 10</span>
+        <span className="level-badge">10 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>The final key is a meaningful English word, but it has been shifted by <strong>{shift}</strong> characters in the alphabet.</p>

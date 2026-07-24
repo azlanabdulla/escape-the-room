@@ -25,7 +25,7 @@ export default function Level2({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 2: The Console Log</h2>
-        <span className="level-badge">2 / 10</span>
+        <span className="level-badge">2 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>Developers often leave messages behind.</p>

@@ -22,7 +22,7 @@ export default function Level4({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 4: The Matrix</h2>
-        <span className="level-badge">4 / 10</span>
+        <span className="level-badge">4 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>Scan this code to reveal the hidden key.</p>

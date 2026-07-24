@@ -28,7 +28,7 @@ export default function Level8({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 8: Local Storage</h2>
-        <span className="level-badge">8 / 10</span>
+        <span className="level-badge">8 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>The browser has a built-in storage system. We've dropped the key in there for safekeeping.</p>

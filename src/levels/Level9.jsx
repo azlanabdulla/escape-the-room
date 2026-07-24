@@ -30,7 +30,7 @@ export default function Level9({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 9: The Network Request</h2>
-        <span className="level-badge">9 / 10</span>
+        <span className="level-badge">9 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>When this level loaded, it made a silent request to the server.</p>

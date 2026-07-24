@@ -21,7 +21,7 @@ export default function Level1({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 1: The Inspector</h2>
-        <span className="level-badge">1 / 10</span>
+        <span className="level-badge">1 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>Your first key is hidden right in front of you, but not visible to the naked eye.</p>

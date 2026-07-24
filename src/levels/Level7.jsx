@@ -21,7 +21,7 @@ export default function Level7({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 7: The Invisible Button</h2>
-        <span className="level-badge">7 / 10</span>
+        <span className="level-badge">7 / 15</span>
       </div>
       <div className="puzzle-container" style={{ position: 'relative' }}>
         <p>There is a button on this page that reveals the key, but it's completely invisible.</p>

@@ -24,7 +24,8 @@ body {
   color: var(--text-primary);
   font-family: 'VT323', monospace;
   font-size: 1.5rem;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +33,16 @@ body {
     linear-gradient(rgba(74, 67, 32, 0.05) 2px, transparent 2px),
     linear-gradient(90deg, rgba(74, 67, 32, 0.05) 2px, transparent 2px);
   background-size: 30px 30px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #root {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 h1, h2, h3 {

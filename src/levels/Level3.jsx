@@ -28,7 +28,7 @@ export default function Level3({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 3: The Token</h2>
-        <span className="level-badge">3 / 10</span>
+        <span className="level-badge">3 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>We intercepted this authentication token, but it's encoded. Can you find the secret key inside?</p>

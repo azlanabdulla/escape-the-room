@@ -38,7 +38,7 @@ export default function Level5({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 5: The Pattern</h2>
-        <span className="level-badge">5 / 10</span>
+        <span className="level-badge">5 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>Identify the missing number in this sequence:</p>

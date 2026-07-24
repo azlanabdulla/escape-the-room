@@ -22,7 +22,7 @@ export default function Level6({ onComplete }) {
     <div>
       <div className="level-header">
         <h2>Level 6: Base64</h2>
-        <span className="level-badge">6 / 10</span>
+        <span className="level-badge">6 / 15</span>
       </div>
       <div className="puzzle-container">
         <p>This string is encoded using a very common scheme on the web. Decode it to find the key.</p>
