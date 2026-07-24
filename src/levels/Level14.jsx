@@ -14,13 +14,14 @@ const Level14 = ({ onComplete }) => {
     const canvas = canvasRef.current;
     if (canvas) {
       const ctx = canvas.getContext('2d');
-      // Draw background same as panel
+      // Draw background
       ctx.fillStyle = '#e8e4b7';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
-      // Draw text in the exact same color so it's invisible
+      // Draw text in a color that is exactly 1 shade different (invisible to the eye)
+      // Background is rgb(232, 228, 183). We'll make text rgb(232, 228, 184).
       ctx.font = '20px VT323';
-      ctx.fillStyle = '#e8e4b7'; 
+      ctx.fillStyle = '#e8e4b8'; 
       ctx.fillText(randomKey, 10, 30);
     }
   }, []);
