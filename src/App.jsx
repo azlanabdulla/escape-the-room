@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Level1 from './levels/Level1';
 import Level2 from './levels/Level2';
 import Level3 from './levels/Level3';
@@ -16,10 +16,23 @@ import Level14 from './levels/Level14';
 import Level15 from './levels/Level15';
 
 function App() {
-  const [currentLevel, setCurrentLevel] = useState(1);
+  const [currentLevel, setCurrentLevel] = useState(() => {
+    const saved = localStorage.getItem('escapeRoomLevel');
+    return saved ? parseInt(saved, 10) : 1;
+  });
   const [gameId, setGameId] = useState(Date.now());
-  const [hasWon, setHasWon] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false);
+  const [hasWon, setHasWon] = useState(() => {
+    return localStorage.getItem('escapeRoomWon') === 'true';
+  });
+  const [gameStarted, setGameStarted] = useState(() => {
+    return localStorage.getItem('escapeRoomStarted') === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('escapeRoomLevel', currentLevel);
+    localStorage.setItem('escapeRoomWon', hasWon);
+    localStorage.setItem('escapeRoomStarted', gameStarted);
+  }, [currentLevel, hasWon, gameStarted]);
 
   const handleLevelComplete = () => {
     if (currentLevel < 15) {
@@ -34,6 +47,9 @@ function App() {
     setHasWon(false);
     setGameStarted(false);
     setGameId(Date.now());
+    localStorage.removeItem('escapeRoomLevel');
+    localStorage.removeItem('escapeRoomWon');
+    localStorage.removeItem('escapeRoomStarted');
   };
 
   const levels = [
