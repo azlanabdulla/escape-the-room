@@ -10,6 +10,9 @@ const Level12 = ({ onComplete }) => {
     const randomKey = 'EVT_' + Math.random().toString(36).substring(2, 10).toUpperCase();
     setLevelKey(randomKey);
 
+    // Provide the key immediately to help the user pass
+    console.log(`%c[DEBUG] The key for Level 12 is: ${randomKey}`, 'color: #b37e4c; font-size: 16px; font-weight: bold;');
+
     const handleCustomUnlock = (e) => {
       console.log(`%c[SYSTEM] Custom event 'unlock' detected.`, 'color: #3a8a3a; font-weight: bold; font-size: 14px;');
       console.log(`%cThe key is: ${randomKey}`, 'color: #b37e4c; font-size: 16px;');
